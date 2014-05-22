@@ -42,8 +42,8 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
   ```
 3. It will setup EasyEngine on Vigrant Box. To Test, point your system browser to http://easyengine.com
 
-4. To check installation log, open another terminal and
+4. To check installation log, open another terminal and use
 
-```bash
-tail -f easyengine-vagrant/logs/*
-```
+  ```bash
+  tail -f easyengine-vagrant/logs/*
+  ```
