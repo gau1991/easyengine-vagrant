@@ -13,7 +13,7 @@ SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "easyengine-vagrant"
+  config.vm.box = "ubuntu/precise32"
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
