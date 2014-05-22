@@ -21,9 +21,8 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
     sudo vagrant plugin install vagrant-hostsupdater
   ```
 
-### Lets Setup Vigrant
+## Lets Setup Vigrant
 1. You can use any distribution from [VigrantCloud](http://vagrantcloud.com/)Engine. I am using ubuntu/precise32. To change Distribution open the Vigrantfile and replace ubutnu/precise with box name
-
   ```bash
   mkdir easyengine-vagrant
   cd easyengine-vagrant
