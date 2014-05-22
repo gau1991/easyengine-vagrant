@@ -8,6 +8,7 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
 
 ## Installation
 1. First we will install Virtual Box and Vigrant on our system.
+
   ```bash
   sudo apt-get install virtualbox
   ```
