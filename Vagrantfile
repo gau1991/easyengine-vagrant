@@ -20,5 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "easyengine.com"
 
   config.vm.provision "shell", inline: $script
+
+  config.vm.synced_folder "logs/", "/var/log/easyengine", owner: "root", group: "root"
   
 end
