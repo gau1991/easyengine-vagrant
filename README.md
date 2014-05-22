@@ -1,4 +1,4 @@
-[EasyEngine] (https://github.com/rtCamp/easyengine) [Vagrant] (https://vagrantup.com/)
+[EasyEngine] (https://github.com/rtCamp/easyengine)-[Vagrant](https://vagrantup.com/)
 ==================
 
 It is simple Vagrant file to test the easy engine on your any system using Vagrant.
@@ -13,22 +13,29 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
   ```
 1.  After that Download Vagrant Latest Version from http://www.vagrantup.com/downloads
 2.  Install vagrant
+
   ```bash
    sudo dpkg -i vagrant_*.deb
   ```
 2.  Also we need to install [vagrant-hostsupdater](https://vagrantup.com/) plugin for Vagrant
+
   ```bash
     sudo vagrant plugin install vagrant-hostsupdater
   ```
 
 ## Lets Setup Vigrant
-1. You can use any distribution from [VigrantCloud](http://vagrantcloud.com/)Engine. I am using ubuntu/precise32. To change Distribution open the Vigrantfile and replace ubutnu/precise with box name
+1. You can use any distribution from [VigrantCloud](http://vagrantcloud.com/) that supports EasyEngine. By Default EasyEngine-Vigrant is using ubuntu/precise. 
+  To change Distribution open the Vigrantfile and replace ubutnu/precise with box name
+
   ```bash
   mkdir easyengine-vagrant
+
   cd easyengine-vagrant
+
   wget https://raw.githubusercontent.com/gau1991/easyengine-vagrant/master/Vagrantfile
   ```
 2. Now Start the Vagrant
+
   ```bash
   vagrant up
   ```
