@@ -29,7 +29,7 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
   To change Distribution open the Vigrantfile and replace ubutnu/precise with box name
 
   ```bash
-  mkdir easyengine-vagrant
+  mkdir -p easyengine-vagrant/logs
 
   cd easyengine-vagrant
 
@@ -41,3 +41,9 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
   vagrant up
   ```
 3. It will setup EasyEngine on Vigrant Box. To Test, point your system browser to http://easyengine.com
+
+4. To check installation log, open another terminal and
+
+```bash
+tail -f easyengine-vagrant/logs/*
+```
