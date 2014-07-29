@@ -4,7 +4,7 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
-$hostname = "ourmarae.com"
+$hostname = "easyengine.com"
 
 # Installation options
 # $install = "ee site create" + $hostname + " --wp"
