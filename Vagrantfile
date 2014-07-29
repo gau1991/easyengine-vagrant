@@ -6,9 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 
 $script = <<SCRIPT
-curl -sL rt.cx/ee | sudo bash
-sudo ee system install
-sudo ee site create easyengine.com --wp  
+wget -qO ee rt.cx/ee && sudo bash ee
+sudo ee stack install
+sudo ee site create easyengine.com --wp
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
