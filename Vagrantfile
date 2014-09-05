@@ -5,13 +5,6 @@
 VAGRANTFILE_API_VERSION = "2"
 
 
-$script = <<SCRIPT
-sudo echo -e "[user]\n\tname = EasyEngine\n\temail = root@easyengine.com" > ~/.gitconfig
-wget -qO ee rt.cx/ee && sudo bash ee
-sudo ee stack install
-sudo ee site create easyengine.com --wpfc  
-SCRIPT
-
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/precise32"
@@ -20,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.hostname = "easyengine.com"
 
-  config.vm.provision "shell", inline: $script
+  config.vm.provision "shell", path: "easyengine.sh"
 
   config.vm.synced_folder "logs/", "/var/log/easyengine", owner: "root", group: "root"
   
