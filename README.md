@@ -29,12 +29,11 @@ Note: If you are using other that Ubuntu/Debian System, then installation steps 
   To change Distribution open the Vigrantfile and replace ubutnu/precise with box name
 
   ```bash
-  mkdir -p easyengine-vagrant/logs
+  git clone git@github.com:gau1991/easyengine-vagrant.git
 
   cd easyengine-vagrant
-
-  wget https://raw.githubusercontent.com/gau1991/easyengine-vagrant/master/Vagrantfile
-  ```
+ ```
+ 
 2. Now Start the Vagrant
 
   ```bash
