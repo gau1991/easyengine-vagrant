@@ -21,5 +21,3 @@ myecho
 sudo ee site create easyengine.com --wpfc || exit 1
 
 myecho
-
-sudo halt
